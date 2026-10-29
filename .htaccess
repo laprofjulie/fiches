@@ -1,0 +1,18 @@
+# fiches.laprofjulie.fr (hébergement OVH)
+Options -Indexes
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Anciennes adresses des PDF -> pages des fiches (on ne supprime jamais une adresse partagée)
+Redirect 301 /crpe/F-00-essentiel-en-10-notions.pdf https://fiches.laprofjulie.fr/crpe/F-00-essentiel-en-10-notions/
+Redirect 301 /crpe/F-01-priorite-des-calculs-et-nombres-relatifs.pdf https://fiches.laprofjulie.fr/crpe/F-01-priorite-des-calculs-et-nombres-relatifs/
+Redirect 301 /crpe/F-02-puissances.pdf https://fiches.laprofjulie.fr/crpe/F-02-puissances/
+Redirect 301 /crpe/F-03-theoreme-de-pythagore.pdf https://fiches.laprofjulie.fr/crpe/F-03-theoreme-de-pythagore/
+
+# Téléchargements : jamais indexés
+<IfModule mod_headers.c>
+  <FilesMatch "-laprofjulie\.pdf$">
+    Header set X-Robots-Tag "noindex, nofollow"
+  </FilesMatch>
+</IfModule>
