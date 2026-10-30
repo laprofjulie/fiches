@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /crpe/telechargement/
+Disallow: /sujets-corriges/
+Disallow: /sujets-inedits/
 Sitemap: https://fiches.laprofjulie.fr/sitemap.xml

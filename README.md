@@ -10,3 +10,13 @@ Site publié sur https://fiches.laprofjulie.fr (GitHub Pages).
 | `/crpe/F-03-theoreme-de-pythagore.pdf` | CRPE 2027 · Théorème de Pythagore |
 
 Fiches gratuites uniquement (aucun contenu payant ici).
+
+## Sujets corrigés gratuits (tunnels Systeme.io)
+
+| Adresse | Contenu |
+|---|---|
+| `/sujets-corriges/8fc945059b8b/{3e,1re,terminale,crpe}/` | Sujets officiels corrigés, par niveau |
+| `/sujets-inedits/c73391c8dd55/{3e,1re,terminale,crpe}/` | Sujets inédits corrigés, par niveau |
+
+Pages non indexées, liens envoyés seulement après l'inscription (www.laprofjulie.fr/sujets-corriges et /sujets-inedits).
+Générées par `build_pages.py` (dossier de travail), jamais de fiche labo ici.
